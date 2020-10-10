@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+        <style>
+         
+          #map {position: relative; 
+            top:300px;
+            left:100px;
+                
+          
+          
+          }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div class="card text-center">
+            <div class="card-header">
+              WEATHER_PORTAL°
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">Should you wear a jacket or a polo today?</p>
+              <form>
+                <div id="formdiv">
+                  <label for="cities">Put your city name here ↓</label>
+                  <input id="cities" type="text" placeholder="City, Town, Village">
+                </div>
+              </form>
+              <a href="#" class="btn btn-primary" >Show Weather</a>
+            </div>
+            
+          </div>
+
+
+          <div id="downsection">
+           
+            
+               
+        <div id="heading">
+            <p id="mainp">Your Weather ↓</p>
+            <h1 id="weatherinfo" style="text-shadow: 2px 2px 3px #f8e1e1; font-weight:bold; font-family:monospace;"> </h1>
+            <h2 id="temp" style="text-shadow: 2px 2px 3px #f8e1e1; font-family:monospace; font-weight:bold;"></h2>
+            <img id="firstimg" >
+            <h3 id="descp" style="text-shadow: 2px 2px 3px #f8e1e1; font-family:monospace;"></h3>
+            <p id="datemain" style="text-shadow: 2px 2px 3px #f8e1e1; font-family:monospace;"></p>
+          
+        </div>
+      
+
+
+
+
+        <h4 style="font-weight:bold; font-family: monospace; margin:1em;  text-shadow: 2px 2px 2px #ffffff;">Current Weather:</h4>
+        <!--cities row-->
+        <div id="threecities">
+          
+          <div id="one"> 
+            <h4 id="weatherinfone" style="font-weight:bold; font-family: monospace;"> </h4>
+            <img id="firstimgone" >
+            <h2 id="tempone"></h2>
+            <p id="dateone"></p>
+            </div>
+          
+           
+          <div id="two" >
+            <h4 id="weatherinfotwo" style="font-weight:bold; font-family: monospace;"> </h4>
+            <img id="firstimgtwo" >
+            <h2 id="temptwo"></h2>
+            <p id="datetwo"></p>
+          </div>
+          
+        
+      
+          <div id="three">
+            <h4 id="weatherinfothree" style="font-weight:bold; font-family: monospace;"> </h4>
+            <img id="firstimgthree" >
+            <h2 id="tempthree"></h2>
+            <p id="datethree"></p>
+          </div>
+          <div id="four">
+            <h4 id="weatherinfofour" style="font-weight:bold; font-family: monospace;"> </h4>
+            <img id="firstimgfour" >
+            <h2 id="tempfour"></h2>
+            <p id="datefour"></p>
+          </div>
+
+        </div>
+
+
+          </div>
+        <div id="map"></div>
+        <p style="text-align:right; padding-top:6em;">@created by Anudeep Ayilalath Puthalath</p>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+       
+    </body>
+</html>
